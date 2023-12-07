@@ -1,0 +1,1 @@
+export const jwtString = import.meta.env.JWT_TOKEN 
