@@ -1,9 +1,9 @@
 <script setup lang="ts">
-// import TheWelcome from '../components/TheWelcome.vue'
+import BalanceComponent from '@/components/BalanceComponent.vue';
+import TitleComponent from '@/components/TitleComponent.vue';
 </script>
 
 <template>
-  <main>
-    <!-- <TheWelcome /> -->
-  </main>
+  <TitleComponent title="Recargas y pagos" />
+  <BalanceComponent />
 </template>

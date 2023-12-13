@@ -1,1 +1,1 @@
-export const jwtString = import.meta.env.JWT_TOKEN 
+export const jwtString = import.meta.env.VITE_JWT_TOKEN

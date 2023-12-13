@@ -1,7 +1,7 @@
 import { useSessionStore } from "@/stores/session";
 import axios from "axios";
 
-const BASE_URL = "http://bun-burn-env.eba-ftyx2m3h.us-east-1.elasticbeanstalk.com";
+const BASE_URL = "https://aspexpressapi-production.up.railway.app";
 
 const axiosInstance = axios.create({
     baseURL: BASE_URL,
@@ -9,7 +9,7 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
     (config) => {
-        const token = useSessionStore().token
+        const token = useSessionStore().token;
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }

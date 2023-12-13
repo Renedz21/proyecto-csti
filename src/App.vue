@@ -1,17 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TitleComponent from './components/TitleComponent.vue';
-import BalanceComponent from './components/BalanceComponent.vue';
-
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <TitleComponent title="Recargas y pagos" />
-  <!-- <RouterLink to="/">Home</RouterLink> -->
-  <BalanceComponent />
-  <div>
-
-  </div>
-
-  <RouterView />
+  <main class="container mx-auto p-6">
+    <RouterView />
+  </main>
 </template>
